@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root{
+  --main-blue: #5A5EE1;
+  --main-red: #FB6C6D;
+  --text-black: #33323A;
+  --border-blue: #E6E9EB;
+  --main-font: 'Montserrat', sans-serif;
+}
+
+body{
+  overflow-y: none;
+  background-color: var(--main-blue);
+  font-family: 'Montserrat', sans-serif;
+}
+
+#todo-container{
+  width: 50%;
+  height: 100vh;
+  background-color: white;
+  margin: auto;
+}
+
+.header-container{
+  display: flex;
+  width: 90%;
+  height: 15vh;
+  margin: auto;
+  align-items: center;
+  background-color: #FCFCFF;
+  color: #33323A;
+  box-shadow: 0px 2px 0px var(--border-blue);
+}
+
+.date-container{
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.sub-date-container{
+  margin-left: 3%;
+}
+
+#date{
+  font-size: 3em;
+}
+
+.input-container{
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+
+#input{
+  width: 100%;
+  font-size: 1.3em;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  border-radius: 5px;
+  border-style: solid;
+}
+
+#tasks-container{
+  width: 90%;
+  height: 65%;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  overflow-y: scroll;
+}
+
+.task-item{
+  display: flex;
+  width: 100%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 1.7em;
+  background-color: #F5F6FA;
+  border-radius: 3px;
+}
+
+.task-item:hover{
+  cursor: pointer;
+}
+
+.item-inactive{
+  color: #dddee1;
+  text-decoration: line-through;
+}
+
+.task-name{
+  width: 100%;
+  font-size: 0.8em;
+  padding-left: 3%;
+}
+
+#delete-btn{
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  color: #ee4c58;
+  background-color: transparent;
+  margin-right: 3%;
+}
+
+#delete-btn:hover{
+  cursor: pointer;
+}
+
+.btn-container{
+  text-align: center;
+  margin: auto;
+}
+
+#submit-btn{
+  font-size: 1.5em;
+  width: 40%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-family: var(--main-font);
+  font-weight: 500;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 3px;
+}
+
+#submit-btn:hover{
+  cursor: pointer;
+}
+
+.btn-active{
+  color: white;
+  background-color: var(--main-blue);
+}
+
+.btn-inactive{
+  background-color: #E8E8E8;
+  color: #2c2d30;
+  cursor: not-allowed;
+}
+
+/* Media Queries */
+@media(max-width: 700px) {
+  #todo-container{
+    width: 70%;
+  }
+}
+
+@media(max-width: 400px) {
+  #todo-container{
+    width: 90%;
+  }
+}

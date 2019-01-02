@@ -8,7 +8,6 @@ export default class DateInfo extends React.Component {
   
   setDate() {
     let date = new Date();
-    let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     let months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sept','Oct','Nov','Dec'];
     
     this.setState({
