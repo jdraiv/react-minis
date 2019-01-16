@@ -1,4 +1,27 @@
 
+function BetController(props) {
+  // Props = betAmount, betChangeEvent
+  return (
+    <div className="inputs-container">
+      <label>Bet Amount</label>
+      <input className="main-input" value={props.betAmount} onChange={props.betChangeEvent} placeholder="Bet Amount"/>
+      <label>Win Chance</label>
+      <input className="main-input" value={props.winChance + "%"} placeholder="Win Chance"/>
+      <label>Payout</label>
+      <input className="main-input" value={props.payout} placeholder="Payout"/>
+    </div>
+  )
+}
+
+function SubmitBet(props) {
+  // Props = submitBetEvent
+  return (
+    <div className="submit-btn-container">
+      <button id="submit-btn" onClick={props.submitBetEvent}>Bet</button>
+    </div>
+  )
+}
+
 class Game extends React.Component{
   constructor(props) {
     super(props);
