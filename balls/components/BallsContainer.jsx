@@ -1,4 +1,12 @@
 
+function Ball(props) {
+  // Props = ballNumber, currentNumber, clickEvent, choosenNumbers
+  let ballClass = props.choosenNumbers.includes(String(props.ballNumber)) ? "ball-active" : "ball-inactive";
+  
+  return <button className={"ball-number " + ballClass} value={props.ballNumber} onClick={props.clickEvent}>{props.ballNumber}</button>
+}
+
+
 export default class BallsContainer extends React.Component {
   // Props = addBallEvent, choosenBalls, gameResult
   constructor(props) {
