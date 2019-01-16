@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root{
+  --back-black: #1A1B1F;
+  --soft-black: #26282C;
+  --main-font: 'Raleway', sans-serif;
+  --alert-red: #ab2e40;
+  --soft-blue: #0586B0;
+}
+
+body{
+  background-color: var(--back-black);
+}
+
+.tokens-container{
+  width: 100%;
+}
+
+
+.balls-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.ball-number{
+  font-size: 2em;
+  margin: 1%;
+  width: 10%;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+.ball-number:hover{
+  cursor: pointer;
+}
+
+.ball-active{
+  background-color: var(--soft-blue);
+}
+
+.ball-inactive{
+  background-color: var(--soft-black);
+}
+
+.inputs-container{
+  margin-top: 3%;
+  margin-bottom: 3%;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs-container label {
+  font-size: 1.1em;
+  font-family: var(--main-font);
+  font-weight: bold;
+  letter-spacing: 1px;
+  width: 60%;
+  margin: auto;
+  color: white;
+}
+
+.main-input{
+  width: 60%;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 2%;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 3px;
+}
+
+.submit-btn-container{
+  width: 40%;
+  margin: auto;
+  text-align: center;
+}
+
+#submit-btn{
+  width: 100%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 1.5em;
+  background-color: var(--soft-black);
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+#submit-btn:hover{
+  cursor: pointer;
+}
+
+#game-container{
+  width: 90%;
+  margin: auto;
+}
